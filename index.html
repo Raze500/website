@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang=en>
+  
+  <head>
+    <meta charset=utf-8>
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <title>
+      Retro CRT Startpage
+    </title>
+    <meta name=description content="Throwback retro CRT style layout for a personalized startpage.">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel=apple-touch-icon href=apple-touch-icon.png>
+    <link rel=icon type=image/png href=skeleton.png>
+    <link rel=stylesheet href=css/startpage-helpers.css>
+    <link rel=stylesheet href=css/startpage.css>
+    <script src=js/vendor/modernizr-2.8.3.min.js>
+    </script>
+  </head>
+  
+  <body>
+    <input type=checkbox id=switch checked>
+    <input type=checkbox id=flicker>
+    <input type=checkbox id=greenTheme>
+    <div class=switch-wires>
+    </div>
+    <div class=switch-mount>
+      <div class=switch-dirt>
+      </div>
+      <div class=power-label title="Toggle Scanlines/Flicker">
+      </div>
+      <div class="theme-button amber" title="Toggle CRT phosphor color">
+      </div>
+      <div id=switch-wrap class="surround on">
+        <div class=switch title="Toggle CRT power">
+          <div class=button>
+          </div>
+          <div class=button-face>
+            <div class=shadow>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=crt>
+      <div class=crt-frame>
+      </div>
+      <div class="crt-glow screen-on">
+      </div>
+    </div>
+    <div class=crt-effects>
+    </div>
+    <div class="wrapper container">
+      <audio id=snd_power_on src=/power_on.mp3 autoplay=false preload=auto>
+        Your browser does not support the
+        <code>
+          audio
+        </code>
+        element.
+      </audio>
+      <audio id=snd_power_off src=/power_off.mp3 autoplay=false preload=auto>
+        Your browser does not support the
+        <code>
+          audio
+        </code>
+        element.
+      </audio>
+      <div class=terminal-content>
+        <header>
+          <pre class=title>                                     
+            █████   ███   █████          ████                                            
+            ░░███   ░███  ░░███          ░░███                                            
+             ░███   ░███   ░███   ██████  ░███   ██████   ██████  █████████████    ██████ 
+             ░███   ░███   ░███  ███░░███ ░███  ███░░███ ███░░███░░███░░███░░███  ███░░███
+             ░░███  █████  ███  ░███████  ░███ ░███ ░░░ ░███ ░███ ░███ ░███ ░███ ░███████ 
+              ░░░█████░█████░   ░███░░░   ░███ ░███  ███░███ ░███ ░███ ░███ ░███ ░███░░░  
+                ░░███ ░░███     ░░██████  █████░░██████ ░░██████  █████░███ █████░░██████ 
+                 ░░░   ░░░       ░░░░░░  ░░░░░  ░░░░░░   ░░░░░░  ░░░░░ ░░░ ░░░░░  ░░░░░░                                                                 
+          </pre>
+          <div>
+            <div class=search-and-clock>
+              <form id=searchform method=get action="https://www.duckduckgo.com/" target=_blank>
+                <input id=searchinput class=search placeholder="initiate search of the interwebs"
+                name=q type=text autocomplete=off spellcheck=false>
+              </form>
+              <div id=clock>
+                01/01/1970 12:00:00 am
+              </div>
+            </div>
+            <div class=tag-list>
+              <label>
+                Tags:
+              </label>
+              <span class=tagsort-toggle>  [ TOGGLE VIEW ]
+              </span>
+              <div class=tag-wrap>
+                <span class=tagsort-reset>[ CLEAR ]
+                </span>
+                //
+              </div>
+            </div>
+          </div>
+        </header>
+        <ul class=shortcuts>
+          <li>
+            <i class="icon icon-issue">
+            </i>
+            <span class=link-name>
+              WARNING!
+            </span>
+            <i class="icon icon-issue">
+            </i>
+            <br>
+            <span class=link-url>
+              Unable to read 'links.json' in the
+              <br>
+              root of the web directory.
+            </span>
+            <br>
+            <span class=tags>
+              Please rename 'links.dist.json' to
+              <br>
+              'links.json' and edit to your liking.
+            </span>
+          </li>
+        </ul>
+        <div class="music-player amber-theme">
+          <audio id="audio-player" src="musica/Starlight.mp3" loop>
+              Your browser does not support the audio element.
+          </audio>
+          <div class="song-info">
+            <span id="song-title"> qwertyquerty - Starlight</span> 
+          </div>
+          <div class="custom-controls">
+              <button id="play-pause">Play</button>
+              <input type="range" id="progress-bar" value="0" max="100">
+              <button id="download" onclick="downloadSong()">Download</button>
+              <select id="speed-control">
+                  <option value="0.5">0.5x</option>
+                  <option value="1" selected>1x</option>
+                  <option value="1.5">1.5x</option>
+                  <option value="2">2x</option>
+              </select>
+          </div>
+    </select>
+        </div>
+  </div>
+        <footer>
+          <hr>
+          <pre class=random>
+          </pre>
+          <hr>
+          <p>
+            Credits on
+            <a href=https://scar45.me target=_blank>
+              scar45
+            </a>
+            //
+            <a href=https://github.com/scar45/retro-crt-startpage target=_blank>
+              Source
+            </a>
+            // To <a href=https://dev.to/ekeijl/retro-crt-terminal-screen-in-css-js-4afh target=_blank>
+              edwin
+              </a>
+              //
+              Inspired too by <a href=https://chafalleiro.github.io/retromator/videomator.html target=_blank>
+                chafalleiro webpage
+                </a> 
+                // Sharing is windsom, check their pages! // TO DO: Add a indext in the menu about myself and my progress.// TO DO: Creampie the clown.
+          </p>
+        </footer>
+      </div>
+      <div class=overlay>
+        391131
+      </div>
+    </div>
+    <script src=js/vendor/jquery-1.12.0.min.js>
+    </script>
+    <script src=js/vendor/moment.js>
+    </script>
+    <script src=js/vendor/tagsort.min.js>
+    </script>
+    <script src=js/main.js>
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,86 @@
+{
+  "link": [
+    {
+      "name": "Steam Profile",
+      "url": "https://steamcommunity.com/id/PersonalRealRaze500/",
+      "icon": "icon-steam.png",
+      "invert": true,
+      "tags": [
+        "bookmarks",
+        "links"
+      ]
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/Raze500",
+      "icon": "github.png",
+      "invert": true,
+      "tags": [
+        "bookmarks",
+        "links",
+        "git"
+      ]
+    },
+
+    {
+      "name": "Gitea",
+      "url": "https://gitea.io",
+      "icon": "icon-gitea.png",
+      "invert": false,
+      "tags": [
+        "git",
+        "versioning"
+      ]
+    },
+    {
+      "name": "Webmail",
+      "url": "https://gmail.com",
+      "icon": "icon-mail.png",
+      "invert": false,
+      "tags": [
+        "messaging",
+        "calendar"
+      ]
+    },
+    {
+      "name": "OwnCloud",
+      "url": "https://owncloud.com",
+      "icon": "icon-owncloud.png",
+      "invert": false,
+      "tags": [
+        "private sharing",
+        "intranet"
+      ]
+    },
+    {
+      "name": "Pastebin",
+      "url": "https://github.com/mkaczanowski/pastebin",
+      "icon": "icon-pastebin.png",
+      "invert": false,
+      "tags": [
+        "text"
+      ]
+    },
+    {
+      "name": "FreshRSS",
+      "url": "https://freshrss.org",
+      "icon": "icon-rss.png",
+      "invert": true,
+      "tags": [
+        "news",
+        "feed"
+      ]
+    },
+    {
+      "name": "Syncthing",
+      "url": "https://syncthing.net/",
+      "icon": "icon-syncthing.png",
+      "invert": false,
+      "tags": [
+        "files",
+        "encrypted"
+      ]
+    }
+  ]
+}
+

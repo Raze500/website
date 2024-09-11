@@ -1,0 +1,21 @@
+{
+  "name": "Files",
+  "url": "https://larsjung.de/h5ai/",
+  "icon": "icon-files.png",
+  "invert": false,
+  "tags": [
+    "files",
+    "sharing"
+  ]
+},
+
+    {
+      "name": "NextCloud",
+      "url": "https://nextcloud.com",
+      "icon": "icon-nextcloud.svg",
+      "invert": false,
+      "tags": [
+        "private sharing",
+        "intranet"
+      ]
+    },
